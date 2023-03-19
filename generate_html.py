@@ -10,6 +10,10 @@ def main():
     cv_template = env.get_template("cv.html")
     blog_post_template = env.get_template("blog_post.html")
 
+    # If output doesn't exist, create it
+    if not os.path.exists("output"):
+        os.makedirs("output")
+
     # Generate CV
     with open("input/cv.md", "r") as f:
         cv_md = f.read()
