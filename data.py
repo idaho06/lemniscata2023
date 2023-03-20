@@ -1,9 +1,9 @@
 posts = [
-    # {
-    #     "title": "Grandma's Classic Chocolate Cake Recipe",
-    #     "date": "2023-03-01",
-    #     "filename": "input/blog/post1.md",
-    # },
+    {
+        "title": "Automate All the Things!",
+        "date": "2023-03-20",
+        "filename": "input/blog/001_automate_everything.md",
+    },
     {
         "title": "Hello World! Welcome to My Blog",
         "date": "2023-03-19",
