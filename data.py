@@ -1,5 +1,10 @@
 posts = [
     {
+        "title": "My Journey into 3D Computer Graphics Programming",
+        "date": "2023-03-22",
+        "filename": "input/blog/20230322_3d_journey.md",
+    },
+    {
         "title": "Automate All the Things!",
         "date": "2023-03-20",
         "filename": "input/blog/001_automate_everything.md",
