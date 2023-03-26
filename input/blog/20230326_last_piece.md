@@ -1,0 +1,8 @@
+# The Last Piece of my 3D engine
+I have completed 91 percent of [Pikuma's course](https://pikuma.com/courses/learn-3d-computer-graphics-programming), with the final chapters focusing on refactoring and cleaning up the code. The last major component I have yet to translate to my [own engine in Rust](https://github.com/idaho06/renderer3d.rust) is triangle clipping. Pikuma performs the clipping in world space, where the math involved is simpler. All that is required is to identify the frustum's planes and determine if the triangle is inside or outside of it.
+
+An alternative approach is to perform clipping in the camera space before the z-division. This method results in four-dimensional clipping, as it involves the w-coordinate. Although the concept is more complex, the math is actually simpler because it doesn't require dealing with the frustum's planes using dot products. Instead, one must only verify that the triangle is inside the cube [-1, 1] across all dimensions.
+
+I've decided to implement a hybrid solution: I will discard full meshes using world space clipping and the distance to the mesh center. To discard triangles, I will employ camera space clipping.
+
+One of the comments in Pikuma's course led me to an [insightful article by Fabien Sanglard](https://fabiensanglard.net/polygon_codec/index.php) about clipping in camera space. He provides an elegant C++ implementation that I will use as a reference. Additionally, the commenter shared [their own implementation](https://github.com/reptilmo/software-renderer/blob/develop/src/clipping.c) in C++, which I will also refer to.

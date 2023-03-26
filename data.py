@@ -1,5 +1,10 @@
 posts = [
     {
+        "title": "Learning Triangle Clipping",
+        "date": "2023-03-26",
+        "filename": "input/blog/20230326_last_piece.md"
+    },
+    {
         "title": "My Journey into 3D Computer Graphics Programming",
         "date": "2023-03-22",
         "filename": "input/blog/20230322_3d_journey.md",
