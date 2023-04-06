@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import os
 from markdown import markdown
 from jinja2 import Environment, FileSystemLoader
