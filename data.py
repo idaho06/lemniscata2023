@@ -1,5 +1,10 @@
 posts = [
     {
+        "title": "To Be Consistent",
+        "date": "2023-04-23",
+        "filename": "input/blog/20230423_not_consistent.md"
+    },
+    {
         "title": "Learning Triangle Clipping",
         "date": "2023-03-26",
         "filename": "input/blog/20230326_last_piece.md"
