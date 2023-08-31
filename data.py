@@ -36,4 +36,14 @@ posts = [
     },
 ]
 
+feed = {
+    'id': 'https://lemniscata.com/',
+    'link': 'https://lemniscata.com/',
+    'title': 'Lemniscata 2023',
+    'author': {'name':'César Rodríguez','email':'cesar.idaho@gmail.com'},
+    'description': 'César\'s Personal blog',
+    'subtitle': 'César\'s Personal blog',
+    'language': 'en-us',
+}
+
 cv = {"title": "César Rodríguez CV"}
