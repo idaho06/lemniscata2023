@@ -3,6 +3,6 @@
 {% block content %}
 <article>
     <p>{{ post.date }}</p>
-    <div>{{ post.content|safe }}</div>
+    <div id="article_text">{{ post.content|safe }}</div>
 </article>
 {% endblock %}
