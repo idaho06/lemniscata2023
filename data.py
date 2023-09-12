@@ -1,5 +1,10 @@
 posts = [
     {
+        "title": "Boxing",
+        "date": "2023-09-12",
+        "filename": "input/blog/20230912_boxing.md",
+    },
+    {
         "title": "Why I no longer play chess",
         "date": "2023-08-07",
         "filename": "input/blog/20230807_chess.md",
