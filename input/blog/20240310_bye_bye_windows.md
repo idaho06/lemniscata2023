@@ -1,0 +1,17 @@
+# From Pop!_OS to openSUSE Tumbleweed
+
+Yes, I'm a distro-hopper. What can I say? I love to spend long hours reinstalling and configuring a fresh Linux installation to my liking until I get bored or find that the hardware support is just not quite there, or the software versions are lagging behind.
+
+I have a Dell XPS 15 7590 from 2019. It boasts an OLED 4K screen, maxed out memory at 64GB of RAM, 2TB SSD, and an Nvidia 1650. It's a nice machine. The Windows installation was upgraded to the latest version. Windows has perfect hardware support for the machine, but boy, it sucks. Intrusive ads for Microsoft services, noticeably slower performance after Intel's Spectre and Meltdown fiascos, and worst of all, I can no longer move the taskbar to the side of the screen, losing precious vertical real estate.
+
+I installed Pop!_OS 22.04 on an external USB drive and I liked it a lot. The OLED panel and the Nvidia card are supported, and it's fast, even with the kernel mitigations activated. Steam/Proton/Wine support for my favorite games covers them all: Doom 2016, Sifu, Homeworld Remastered, Blasphemous, Demeo. All of them run perfectly, with Doom even running somewhat smoother using the Vulkan drivers. Pop!_OS defaults to X11 when Nvidia drivers are running, but forcing a Wayland session with version 510 of the drivers was working well for me.
+
+But then, System76 dropped the ball on GNOME and started their own desktop shell, COSMIC. Although the desktop environment in 22.04 is a heavily modified GNOME desktop with extensions, System76 decided to stop updating it. GNOME package updates are stuck at version 42. I tested GNOME 45 in Fedora in a virtual machine and I liked it a lot. Shortly after, [a Veronica Explains YouTube video mentioned Debian Sid](https://youtu.be/kGlwg_oH9Tg?si=yvxXXT-nxIQxODBg&t=579). So my curiosity kicked in, and I decided to try it on a small Toshiba laptop I had lying around. [After a bit of research on how to install it](https://wiki.debian.org/DebianUnstable#Installation), the experience was fantastic. Pretty much updated packages, a vanilla installation of GNOME, and Wayland working perfectly. After [adding Flatpak](https://flatpak.org/setup/Debian), it was nearly the perfect Linux distribution. But then, something didn't happen. The gnome-shell package is still stuck at version 44 today.
+
+![Debian, seriously?](https://u.cubeupload.com/idaho06/debiansidgnomelol.png)
+
+Apparently, a dependency on Mutter has held it for several months now. So I wandered around to see what other rolling Linux distributions are out there and I found [openSUSE Tumbleweed](https://get.opensuse.org/tumbleweed/). I installed it on the external USB for my battle laptop, and I was blown away. Bleeding-edge packages, excellent support for Nvidia, Flatpak out-of-the-box, and the very latest version of GNOME fully working. Also, [YaST2](https://en.opensuse.org/Portal:YaST), the administration tool from SUSE that reminds me a lot of the [SMIT tool in IBM's AIX](https://youtu.be/MFnbAKYkisc?si=pajOTVVqk08lkQxT&t=531), is a nice addition and makes it easy to configure some aspects of the operating system that I always like to tweak, like the kernel parameters in the boot loader.
+
+![openSUSE Tumbleweed logo reminds me of something ;)](https://u.cubeupload.com/idaho06/tumbleweedisnice.png)
+
+After trying it for a couple of weeks, I decided to wipe out my Windows 11 installation on the Dell laptop and fully replace it with openSUSE Tumbleweed. I'm very happy with it and I'm going to stick with it.

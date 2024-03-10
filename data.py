@@ -1,5 +1,10 @@
 posts = [
     {
+        "title": "From Pop!_OS to openSUSE Tumbleweed",
+        "date": "2024-03-10",
+        "filename": "input/blog/20240310_bye_bye_windows.md"
+    },
+    {
         "title": "Boxing",
         "date": "2023-09-12",
         "filename": "input/blog/20230912_boxing.md",
@@ -7,7 +12,7 @@ posts = [
     {
         "title": "Why I no longer play chess",
         "date": "2023-08-07",
-        "filename": "input/blog/20230807_chess.md",
+        "filename": "input/blog/20230807_chess.md"
     },
     {
         "title": "Retro-Code",
